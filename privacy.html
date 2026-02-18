@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Privacy Policy for Useful Products apps." />
+    <title>Useful Products - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0f1116;
+        --bg-elev: #1a1e27;
+        --bg-soft: #141821;
+        --text: #f4f4f6;
+        --muted: #b2b7c3;
+        --accent: #ff6b00;
+        --accent-2: #ff8a3d;
+        --line: rgba(255, 255, 255, 0.08);
+        --card: rgba(255, 255, 255, 0.04);
+        --shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+        --radius-lg: 20px;
+        --radius-md: 14px;
+        --radius-sm: 10px;
+        --max-width: 1080px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: "Space Grotesk", "Helvetica Neue", sans-serif;
+        background:
+          radial-gradient(900px 500px at 10% -10%, rgba(255, 107, 0, 0.25), transparent 60%),
+          radial-gradient(800px 500px at 90% 0%, rgba(255, 138, 61, 0.18), transparent 55%),
+          linear-gradient(180deg, #0c0f14 0%, #0f1116 50%, #0d1014 100%);
+        min-height: 100vh;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .grain {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.05;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E");
+        mix-blend-mode: soft-light;
+      }
+
+      header {
+        padding: 48px 24px 24px;
+      }
+
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+
+      .hero {
+        border-radius: var(--radius-lg);
+        padding: 36px;
+        background:
+          linear-gradient(140deg, rgba(255, 107, 0, 0.18), rgba(255, 255, 255, 0.02)),
+          var(--bg-elev);
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -30% -60% auto;
+        width: 380px;
+        height: 380px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 107, 0, 0.35), transparent 60%);
+        filter: blur(10px);
+        opacity: 0.8;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+
+      .brand-badge {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        background: rgba(255, 107, 0, 0.15);
+        color: var(--accent);
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .hero h1 {
+        font-family: "Fraunces", "Times New Roman", serif;
+        font-size: clamp(2.2rem, 4vw, 3.2rem);
+        margin: 14px 0 8px;
+      }
+
+      .hero p {
+        color: var(--muted);
+        max-width: 560px;
+        margin: 0 0 18px;
+        font-size: 1.05rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .btn {
+        padding: 12px 18px;
+        border-radius: 999px;
+        font-weight: 600;
+        border: 1px solid transparent;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #0d0d0f;
+      }
+
+      .btn-secondary {
+        border-color: var(--line);
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      }
+
+      main {
+        padding: 0 24px 80px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .section {
+        margin-top: 32px;
+      }
+
+      .section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+      }
+
+      .card {
+        padding: 18px;
+        background: var(--card);
+        border-radius: var(--radius-md);
+        border: 1px solid var(--line);
+      }
+
+      .card h3 {
+        margin: 4px 0 8px;
+      }
+
+      .card p {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .faq {
+        display: grid;
+        gap: 14px;
+      }
+
+      details {
+        background: var(--bg-soft);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        transition: border-color 0.2s ease, background 0.2s ease;
+      }
+
+      details[open] {
+        border-color: rgba(255, 107, 0, 0.4);
+        background: rgba(255, 107, 0, 0.06);
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::after {
+        content: "+";
+        float: right;
+        color: var(--accent);
+      }
+
+      details[open] summary::after {
+        content: "−";
+      }
+
+      details p {
+        color: var(--muted);
+        margin-top: 10px;
+      }
+
+      .support {
+        display: grid;
+        gap: 12px;
+        padding: 18px;
+        background: linear-gradient(160deg, rgba(255, 107, 0, 0.12), rgba(255, 255, 255, 0.02));
+        border-radius: var(--radius-lg);
+        border: 1px solid rgba(255, 107, 0, 0.3);
+      }
+
+      .support a {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .policy-intro {
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .policy-list {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      .policy-list li {
+        margin: 10px 0;
+      }
+
+      .policy-text {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      footer {
+        padding: 32px 24px 60px;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        background: rgba(255, 107, 0, 0.12);
+        color: var(--accent);
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.4px;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeUp 0.7s ease forwards;
+      }
+
+      .delay-1 {
+        animation-delay: 0.1s;
+      }
+
+      .delay-2 {
+        animation-delay: 0.2s;
+      }
+
+      .delay-3 {
+        animation-delay: 0.3s;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reveal {
+          animation: none;
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      @media (max-width: 720px) {
+        header {
+          padding: 32px 18px 20px;
+        }
+
+        main {
+          padding: 0 18px 64px;
+        }
+
+        .hero {
+          padding: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="grain" aria-hidden="true"></div>
+      <header>
+        <div class="container hero reveal">
+          <div class="pill">Useful Products</div>
+          <h1>Privacy Policy</h1>
+          <p>Effective Date: February 18, 2026</p>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="section">
+          <h2>Overview</h2>
+          <div class="card">
+            <p class="policy-intro">
+              This Privacy Policy applies to all mobile applications published by Useful Products, including Cooking
+              Time, Fractions Calculator Pro, and any other apps we develop. We are committed to protecting your
+              privacy. This policy explains our practices regarding data collection — or more precisely, our lack
+              thereof.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Information We Do Not Collect</h2>
+          <div class="card">
+            <p class="policy-text">
+              Our apps do not collect, store, transmit, or share any personal information. Specifically, we do not
+              collect:
+            </p>
+            <ul class="policy-list">
+              <li>Personal identifiers such as your name, email address, phone number, or device ID</li>
+              <li>Location data</li>
+              <li>Usage data or analytics</li>
+              <li>Crash reports or diagnostic information</li>
+              <li>Photos, contacts, or any other content from your device</li>
+              <li>Financial or payment information</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>No Account Required</h2>
+          <div class="card">
+            <p class="policy-text">
+              Our apps do not require you to create an account or log in. You can use all features of our apps
+              without providing any personal information.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>No Third-Party Services</h2>
+          <div class="card">
+            <p class="policy-text">
+              Our apps do not integrate any third-party analytics, advertising networks, crash reporting tools, or
+              other services that might collect data about you or your device.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Local Storage</h2>
+          <div class="card">
+            <p class="policy-text">
+              Some of our apps may save preferences or data locally on your device (such as saved recipes or
+              calculator history). This data never leaves your device and is not accessible to us or any third party.
+              You can clear this data at any time by uninstalling the app or clearing the app's data through your
+              device settings.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Children's Privacy</h2>
+          <div class="card">
+            <p class="policy-text">
+              Our apps are suitable for general audiences and do not knowingly collect any information from children
+              under the age of 13 or any other age group, as we do not collect information from any users.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Changes to This Policy</h2>
+          <div class="card">
+            <p class="policy-text">
+              We may update this Privacy Policy from time to time. Any changes will be reflected with a new effective
+              date. Continued use of our apps after any changes constitutes your acceptance of the updated policy. We
+              encourage you to review this policy periodically.
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Contact Us</h2>
+          <div class="support">
+            <p class="policy-text">If you have any questions or concerns about this Privacy Policy or our apps, please contact us at:</p>
+            <p class="policy-text"><strong>Useful Products</strong><br />Email: customer-care@useful-products.odoo.com</p>
+            <p class="policy-text">
+              This policy applies to: Cooking Time, Fractions Calculator Pro, and all other apps published under the
+              Useful Products brand.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
